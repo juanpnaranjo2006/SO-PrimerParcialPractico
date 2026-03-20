@@ -1,0 +1,8 @@
+# Archivo: ej1.txt
+# MLFQ (RR(1), RR(3), RR(4), SJF)
+# etiqueta; BT; AT; Q; Pr
+A; 9; 0; 2; 5
+B; 13; 0; 3; 4
+C; 11; 0; 1; 3
+N; 17; 0; 2; 2
+O; 4; 0; 3; 1
