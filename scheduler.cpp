@@ -357,9 +357,11 @@ int SCHEDULER::executeProcess(int numCola) {
     else if (MLQ[numCola].get_algID() == 5) {
         // Limita ejecución por quantum y próximos eventos
         passedTime = std::min(dataTable.getRemainingTime()[p], MLQ[numCola].get_quantum());
+        /*
         if (!relevantTimes.empty()) {
             passedTime = std::min(passedTime, *(relevantTimes.begin()) - currentTime);
         }
+        */
 
         // Proceso finaliza dentro del quantum
         if (dataTable.getRemainingTime()[p] <= passedTime) {
@@ -393,6 +395,7 @@ int SCHEDULER::executeProcess(int numCola) {
             }
         }
 
+        /*
         // Interrupción antes de completar quantum
         else {
 
@@ -401,9 +404,10 @@ int SCHEDULER::executeProcess(int numCola) {
             }
 
             // Reencola proceso en misma cola
-            MLQ[numCola].removeProcess(p);
-            MLQ[numCola].addProcess(p, currentTime + passedTime);
+            //MLQ[numCola].removeProcess(p);
+            //MLQ[numCola].addProcess(p, currentTime + passedTime);
         }
+        */
 
         // Actualiza tiempo restante tras ejecución parcial
         dataTable.getRemainingTime()[p] -= passedTime;
