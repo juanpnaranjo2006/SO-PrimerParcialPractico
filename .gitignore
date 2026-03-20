@@ -1,0 +1,21 @@
+# === Ignorar CMakeLists.txt ===
+CMakeLists.txt
+
+# === Carpeta de build de CLion / CMake ===
+cmake-build-*/
+build/
+
+# === Archivos generados por CMake ===
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# === Archivos de configuración de CLion (JetBrains) ===
+.idea/
+*.iml
+
+# === Archivos temporales del sistema ===
+.DS_Store
+Thumbs.db

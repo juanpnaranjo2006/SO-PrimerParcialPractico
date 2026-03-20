@@ -1,0 +1,5 @@
+# Archivo: inputE01.txt
+# etiqueta; burst time (BT); arrival time (AT); Queue (Q); Priority (5 > 1)
+A; 3; 0; 1; 5
+B; 4; 0; 1; 4
+C; 3; 0; 2; 3
