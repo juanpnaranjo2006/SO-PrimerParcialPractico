@@ -112,7 +112,7 @@ int main(int argc, char* argv[]) {
             promComp = promComp / static_cast<float>(sch.getTable().getSize());
             promTAT = promTAT / static_cast<float>(sch.getTable().getSize());
             promWait = promWait / static_cast<float>(sch.getTable().getSize());
-            outputFile << std::fixed << std::setprecision(1) << "WT=" << promWait << "; CT=" << promComp << "; RT=" << promRes << "; TAT=" << promTAT << ";\n";
+            outputFile << std::fixed << std::setprecision(1) << "\nWT=" << promWait << "; CT=" << promComp << "; RT=" << promRes << "; TAT=" << promTAT << ";\n";
 
             outputFile.close();
         }
